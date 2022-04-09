@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
 
 [node name="MainScene" type="Node2D"]
 
@@ -105,3 +106,9 @@ position = Vector2( 1184, 568 )
 
 [node name="Tile29" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 1184, 568 )
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 128, 504 )
+moveDistance = 40
