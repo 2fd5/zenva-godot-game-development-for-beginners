@@ -9,6 +9,12 @@
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 160, 72 )
 
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 112, 504 )
+speed = 80
+
 [node name="Tiles" type="Node" parent="."]
 
 [node name="Tile" parent="Tiles" instance=ExtResource( 2 )]
@@ -106,9 +112,3 @@ position = Vector2( 1184, 568 )
 
 [node name="Tile29" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 1184, 568 )
-
-[node name="Enemies" type="Node" parent="."]
-
-[node name="Enemy" parent="Enemies" instance=ExtResource( 3 )]
-position = Vector2( 128, 504 )
-moveDistance = 40
